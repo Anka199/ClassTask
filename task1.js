@@ -34,7 +34,7 @@ const biodata = {
         },
         {
             skill: "Digital Ads",
-            skill: "Beginner"
+            level: "Beginner"
         }
     ],
     interstInCoding: true
