@@ -1,9 +1,9 @@
 function segitiga(num) {
     if (typeof num === 'number') {
-        for (let i = 1; i <= num; i++) {
+        for (let i = 0; i <= num; i++) {
             let str = ""
-            for (let j = i; j <= num; j++) {
-                str += j
+            for (let j = i + 1; j <= num; j++) {
+                str += j - i
             }
             console.log(str)
         }
