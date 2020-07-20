@@ -4,7 +4,7 @@ let bahasaInggris = 89
 let ipa = 69
 let average = (matematika + bahasaIndo + bahasaInggris + ipa) / 4
 
-if (matematika == 'number', bahasaIndo == 'number', bahasaInggris == 'number', ipa == 'number') {
+if (matematika, bahasaIndo, bahasaInggris, ipa == 'number') {
     if (average >= 90) {
         console.log("Rata-rata :" + average + ". Grade : A");
     } else if (average >= 80) {
