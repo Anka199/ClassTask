@@ -1,0 +1,250 @@
+  html,
+  body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+  }
+  /* navbar */
+  
+  nav {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .nav1 {
+      display: flex;
+      flex: 5;
+      justify-content: space-between;
+  }
+  
+  .nav1 img {
+      max-width: 30px;
+      max-height: 30px;
+      margin-top: 17.5px;
+      margin-left: 17.5px;
+      margin-right: 17.5px;
+  }
+  
+  .search.bar {
+      display: flex;
+  }
+  
+  .search.bar input {
+      height: 25px;
+      margin-top: 17.5px;
+      border: 1px solid #57CAD5;
+      border-radius: 10px;
+  }
+  
+  .nav1 .title {
+      font-size: 25px;
+      margin-top: 10px;
+  }
+  
+  .nav2 {
+      display: flex;
+      flex: 2;
+      justify-content: center;
+  }
+  
+  .nav2 .cart {
+      font-size: 20px;
+      margin-top: 17.5px;
+  }
+  
+  .nav2 .number {
+      margin-top: 20px;
+      margin-left: 5px;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      background-color: #57CAD5;
+      color: white;
+      display: flex;
+  }
+  
+  .nav2 .number span {
+      margin: auto;
+  }
+  /* navbar */
+  
+  .container-body {
+      margin: 0;
+      display: flex;
+      height: 90%;
+  }
+  
+  #sidebar {
+      width: 65px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #sidebar img {
+      width: 30px;
+      height: 30px;
+      margin-top: 35px;
+      margin-bottom: 10px;
+  }
+  
+  .products {
+      padding-left: 10px;
+      background-color: rgba(190, 195, 202, 0.3);
+      display: flex;
+      flex: 5;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      overflow: scroll;
+  }
+  
+  .card-item {
+      width: 30%;
+      margin-top: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  
+  .headcard {
+      border-radius: 10px;
+      overflow: hidden;
+      max-height: 250px;
+      max-width: 250px;
+  }
+  
+  .headcard img {
+      object-fit: cover;
+      width: 100%;
+  }
+  
+  .contentcard {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+  }
+  
+  .productname {
+      font-size: 25px;
+  }
+  
+  .cartbox {
+      flex: 2;
+      width: 100%;
+      padding: 0;
+      overflow: scroll;
+  }
+  
+  .itemoncart {
+      width: 95%;
+      margin: 13px auto;
+      height: 85px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .itemoncart .image {
+      height: 85px;
+  }
+  
+  .itemoncart img {
+      width: 85px;
+      object-fit: cover;
+  }
+  
+  .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .content .itemname {
+      font-size: 25px;
+      margin-left: 10px;
+  }
+  
+  .bottom {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  .count button,
+  .count span {
+      width: 25px;
+      height: 25px;
+      border: none;
+      color: #82DE3A;
+  }
+  
+  .count button {
+      background-color: rgb(208, 250, 176);
+      border: 1px solid #82DE3A;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .count span {
+      background: none;
+      border-top: 1px solid #82DE3A;
+      border-bottom: 1px solid #82DE3A;
+      text-align: center;
+  }
+  
+  .count {
+      width: 75px;
+      height: 25px;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+  }
+  
+  .pricecart {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-right: 10px;
+  }
+  
+  .cartbox .footer {
+      margin: 17px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: fixed;
+      bottom: 10px;
+  }
+  
+  .cartbox .footer h5 {
+      width: 40%;
+  }
+  
+  #button1 {
+      background-color: #57CAD5;
+  }
+  
+  #button2 {
+      background-color: #F24F8A;
+  }
+  
+  .slide-menu {
+      left: 0 !important;
+  }
+  
+  @media(max-width: 900px) {
+      .cartbox,
+      .nav1 .title,
+      .nav2 {
+          display: none;
+      }
+      .productname {
+          font-size: 15px;
+      }
+  }
