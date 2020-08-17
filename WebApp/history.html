@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/appstyle.css">
+    <style>
+        .board {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            overflow: scroll;
+        }
+        
+        .board-content-1,
+        .board-content-2,
+        .board-content-3 {
+            margin-top: 35px;
+            width: 30%;
+            height: 190px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .board-content-1 {
+            background: linear-gradient(278.29deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+            filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+        }
+        
+        .board-content-2 {
+            background: linear-gradient(278.29deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+            filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+        }
+        
+        .board-content-3 {
+            background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+            filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+        }
+        
+        .text-board {
+            align-self: center;
+            margin-left: 25px;
+        }
+        
+        #revenue {
+            width: 80%;
+            justify-content: center;
+            background-color: tomato;
+            display: flex;
+            margin-top: 35px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        #revenue img {
+            height: 365px;
+        }
+    </style>
+    <title>History</title>
+</head>
+
+<body>
+    <nav class="shadow">
+        <a href="#" class="ml-3 my-auto"><img src="./Assets/icon/menu.png" width="30px"></a>
+        <h4 class="mx-auto my-auto">History</h4>
+
+    </nav>
+    <div class="container-body">
+        <!-- sidebar -->
+        <div id="sidebar" class="shadow">
+            <a href="" class="mt-4"><img src="./Assets/icon/fork.png"></a>
+            <a href=""><img src="./Assets/icon/clipboard.png"></a>
+            <a href="#" data-toggle="modal" data-target="#Modal"><img src="./Assets/icon/add.png"></a>
+        </div>
+        <div class="board">
+            <div class="board-content-1">
+                <div class="text-board">
+                    <h5>Today's Income</h5>
+                    <h2>Rp1.000.000,00</h2>
+                    <h5>+2% yesterday</h5>
+                </div>
+            </div>
+            <div class="board-content-2">
+                <div class="text-board">
+                    <h5>orders</h5>
+                    <h2>3.270</h2>
+                    <h5>+5% Last Week</h5>
+                </div>
+            </div>
+            <div class="board-content-3">
+                <div class="text-board">
+                    <h5>This Years Income</h5>
+                    <h2>Rp100.000.000.000,00</h2>
+                    <h5>+10% Last Year</h5>
+                </div>
+            </div>
+            <div class="shadow rounded" id="revenue">
+                <img src="./Assets/revenue.jpg">
+            </div>
+            <table class="table m-5 shadow">
+                <thead>
+                    <tr>
+                        <th scope="col">Invoices</th>
+                        <th scope="col">Cashier</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Orders</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#10928</td>
+                        <td>Cashier 1</td>
+                        <td>06 October 2019</td>
+                        <td>Ice Tea, Salad</td>
+                        <td>Rp120.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>#10928</td>
+                        <td>Cashier 1</td>
+                        <td>06 October 2019</td>
+                        <td>Ice Tea, Salad</td>
+                        <td>Rp120.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>#10928</td>
+                        <td>Cashier 1</td>
+                        <td>06 October 2019</td>
+                        <td>Ice Tea, Salad</td>
+                        <td>Rp120.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>#10928</td>
+                        <td>Cashier 1</td>
+                        <td>06 October 2019</td>
+                        <td>Ice Tea, Salad</td>
+                        <td>Rp120.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>#10928</td>
+                        <td>Cashier 1</td>
+                        <td>06 October 2019</td>
+                        <td>Ice Tea, Salad</td>
+                        <td>Rp120.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>#10928</td>
+                        <td>Cashier 1</td>
+                        <td>06 October 2019</td>
+                        <td>Ice Tea, Salad</td>
+                        <td>Rp120.000,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
